@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Maxwell Folley"]
   s.email       = 'maxwell@madebyflavor.com'
   s.files       = ["lib/mogwai.rb"]
-  s.homepage    = 'http://rubygems.org/gems/mogwai'
+  s.homepage    = 'https://github.com/maxfolley/mogwai'
   s.license     = 'MIT'
   s.add_dependency 'aws-s3', '0.6.3'
 end

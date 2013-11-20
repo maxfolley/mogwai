@@ -1,3 +1,4 @@
+![mogwai](https://raw.github.com/maxfolley/mogwai/master/mogwai.jpg)
 # Mogwai
 
 A gem for deploying directories to s3

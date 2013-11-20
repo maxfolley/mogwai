@@ -38,7 +38,7 @@ class Mogwai
         AWS::S3::S3Object.store(
           remote_file,
           open(file),
-          config.AWS_BUCKET,
+          config[:AWS_BUCKET],
           :access => :public_read
         )
       end

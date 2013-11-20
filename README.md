@@ -1,7 +1,7 @@
 ![mogwai](https://raw.github.com/maxfolley/mogwai/master/mogwai.jpg)
 # Mogwai
 
-A gem for deploying directories to s3
+Mogwai is a ruby gem that recursively deploys the contents of a folder to an s3 bucket.
 
 ## How to    
 
@@ -22,6 +22,8 @@ Create a Mogfile in the root of your project, with the following specified
     # Directory to upload to s3 bucket
     BUILD_DIR: 'build'
 
-To deploy, run the mogwai comman
+To deploy, run the mogwai command
 
     $ mogwai
+
+The contents of the 'build' directory will now reside at the root of the s3 bucket.

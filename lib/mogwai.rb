@@ -29,8 +29,10 @@ class Mogwai
       :access_key_id     => config[:AWS_ACCESS_KEY_ID],
       :secret_access_key => config[:AWS_SECRET_ACCESS_KEY]
     )
+
     build_dir = config[:BUILD_DIR].gsub(/([^\/])$/, '\1/')
-    build_glob = build_dir << "**/*"
+    build_glob = build_dir + "**/*"
+
     Dir.glob(build_glob).each do |file|
       if File.file?(file)
         remote_file = file.gsub(build_dir, "")

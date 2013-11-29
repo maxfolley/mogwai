@@ -26,4 +26,8 @@ To deploy, run the mogwai command
 
     $ mogwai
 
-The contents of the 'build' directory will now reside at the root of the s3 bucket.
+The contents of the 'build' directory will now reside at the root of the s3 bucket.    
+
+Optionall, you can pass the bucket name into the executable.
+
+    $ mogwai mybucket

@@ -2,4 +2,4 @@
 
 require 'mogwai'
 
-Mogwai.deploy
+Mogwai.deploy ARGV[0]

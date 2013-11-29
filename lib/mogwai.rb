@@ -19,9 +19,10 @@ class Mogwai
     end
   end
 
-  def self.deploy
+  def self.deploy bucket = nil
     config = Mogwai::Config.new
     config.read
+    bucket ||= config[:BUCKET]
 
     # Deploy built assets to s3
     STDOUT.sync = true

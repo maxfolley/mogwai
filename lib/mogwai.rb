@@ -47,6 +47,7 @@ class Mogwai
       end
     end
     STDOUT.sync = false 
+    puts "Mogwai successfully deployed to " + bucket
     return true
   end
 
